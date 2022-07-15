@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Kvalifik/carlsberg-experimental-brews/issues"
   },
-  "homepage": "https://github.com/Kvalifik/carlsberg-experimental-brews#readme"
+  "homepage": "https://github.com/Kvalifik/carlsberg-experimental-brews#readme",
+  "dependencies": {
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
+  }
 }
