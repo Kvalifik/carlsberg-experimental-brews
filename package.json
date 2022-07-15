@@ -1,0 +1,23 @@
+{
+  "name": "carlsberg-experimental-brews",
+  "version": "1.0.0",
+  "description": "[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx cross-env NODE_ENV=development && npx concurrently \"npm run watch:tailwind\" \"npm run watch:shopify\"",
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/tailwind.css",
+    "watch:tailwind": "npx tailwindcss -i ./src/css/tailwind.css -o ./assets/tailwind.css --watch",
+    "watch:shopify": "shopify theme serve --theme-editor-sync",
+    "pull:settings": "shopify theme pull --nodelete -x 'assets/*' -x 'layout/*' -x 'locales/*' -x 'sections/*' -x 'snippets/*' -x 'templates/*.liquid' -x 'config/settings_schema.json'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kvalifik/carlsberg-experimental-brews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kvalifik/carlsberg-experimental-brews/issues"
+  },
+  "homepage": "https://github.com/Kvalifik/carlsberg-experimental-brews#readme"
+}
